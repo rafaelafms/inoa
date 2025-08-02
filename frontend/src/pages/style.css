@@ -1,0 +1,59 @@
+body { 
+    font-family: 'Google Sans Code', monospace;
+    margin: 3rem; 
+    background-color: #ececec;
+}
+.titulo1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 2rem;
+}
+form { 
+    margin: 4rem auto; 
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 3rem;
+    width: fit-content;
+}
+.campos-form{
+    display: inline-flex;
+    align-items: baseline;
+}
+.campo{
+    margin: 5px 5px 5px 20px;
+}
+input{
+    height: 1.8rem;
+    border-radius: 10px;
+    border-width: 1px;
+    padding: 0 10px;
+    margin: 0 10px;
+}
+button{
+    border-width: 0;
+    color: #353535;
+    background-color: #d3d2d2;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+.buscar{
+    width: 20%;
+    height: 40px;
+    margin-top: 3rem;
+    font-size: 20px;
+    border-radius: 15px;
+}
+.adicionar-ativo{
+    border-radius: 20px;
+    font-size: large;
+    margin-left: 10.5rem;
+}
+canvas { 
+    max-width: 1200px!important; 
+    height: 600px!important; 
+}
+.erro{
+    color: red; 
+    text-align: center;
+}
