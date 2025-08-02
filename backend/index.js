@@ -10,6 +10,7 @@ app.use(express.json())
 app.post('/consulta', async (req, res) => {
     const fechamentos = {}
     let datas = []
+    const ativosInvalidos = []
     const { ativos, data_inicio, data_fim } = req.body
 
     const ativosComSufixo = ativos.map((ativo) => ativo + '.SA')    
