@@ -35,6 +35,11 @@ function Home() {
       })
 
       const resultado = await resposta.json()
+
+      if (resultado.ativosInvalidos.length > 0) {
+        alert(`Ativos inválidos: ${resultado.ativosInvalidos.join(', ')}`); 
+      }
+      
       setValores(resultado.dados.fechamentos)
       setDatas(resultado.dados.datas)
 
@@ -85,3 +90,4 @@ function Home() {
 }
 
 export default Home
+
