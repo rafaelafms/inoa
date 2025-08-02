@@ -26,7 +26,7 @@ app.post('/consulta', async (req, res) => {
                 datas = valores.map(q => new Date(q.date).toLocaleDateString('pt-BR'))
             }
         } catch (erro) {
-            console.error('Erro ao consultar o ativo: ', erro)
+            ativosInvalidos.push(ativoComSufixo.replace('.SA', ''))
         }
     })
 
@@ -34,7 +34,8 @@ app.post('/consulta', async (req, res) => {
 
     res.json({
         status: 'ok',
-        dados: { datas, fechamentos, }
+        dados: { datas, fechamentos },
+        ativosInvalidos
     })
 })
 
