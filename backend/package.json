@@ -1,0 +1,16 @@
+{
+  "name": "back_inoa",
+  "version": "1.0.0",
+  "description": "Desafio front - INOA",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Rafaela Fernandes",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "yahoo-finance2": "^2.13.3"
+  }
+}
